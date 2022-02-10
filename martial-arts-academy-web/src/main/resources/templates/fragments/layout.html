@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html th:fragment="layout (template, menu)">
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" th:href="@{/resources/images/favicon.png}">
+
+        <title>Martial Arts Academy</title>
+
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" th:href="@{/css/home.css}"/>
+
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Bootstrap Scripts -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+<section class="colored-section" id="title">
+
+    <div class="container-fluid ">
+
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <p class=fighter>FIGHTER</p>
+            <a class="navbar-brand" href="">Martial arts academy</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class= "collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Founders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Coaches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Fighters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Legends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Title -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <p class="bruce-lee">"Showing off is the fool's idea of glory"- Bruce Lee</p>
+                <h1 class="big-heading">FIGHT FOR YOURS</h1>
+                <button type="button" class="btn btn-danger">TRY A FREE CLASS</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--Footer-->
+
+<footer id="footer">
+    <div class="container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p class="copyright">© Copyright 2022 Antonio Mužar</p>
+    </div>
+</footer>
+</body>
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</html>
