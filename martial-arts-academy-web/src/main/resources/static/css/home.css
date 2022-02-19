@@ -13,6 +13,9 @@ p{
     color: #fff;
 }
 
+#brand:hover{
+    color:#dc3545;
+}
 #title{
     background-color: #121212;
     text-align: left;
@@ -47,12 +50,11 @@ p{
 
 }
 
- .navbar-expand-lg {
-  
+ .navbar{
+     padding-left:0rem;
 }
 
-
-.navbar-dark .navbar-brand:hover{
+.navbar:hover{
     color:#dc3545;
 
 }
@@ -62,7 +64,6 @@ p{
     margin-left: 200px;
 
 }
-
 .nav-item{
     padding:0 18px;
 
@@ -72,15 +73,23 @@ p{
 }
 #footer{
     text-align: center;
+    background-color:#d1d1d1;
 }
 
 .social-icon:hover{
     color:#dc3545;
 }
 .social-icon{
-    margin: 20px 10px;
+    margin: 25px 15px;
+    font-size: 1.5rem;
+
 }
 
 .copyright{
     color: #8f8f8f;
+}
+.title-image {
+    width: 80%;
+    height: 80%;
+    transform: rotate(25deg);
 }

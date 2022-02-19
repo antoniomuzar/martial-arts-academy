@@ -8,11 +8,11 @@
         <version>2.6.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>antonio</groupId>
     <artifactId>martial-arts-academy-data</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>martial-arts-academy-data</name>
-    <description>martial-arts-academy-data</description>
+
     <properties>
         <java.version>17</java.version>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
@@ -46,6 +46,17 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

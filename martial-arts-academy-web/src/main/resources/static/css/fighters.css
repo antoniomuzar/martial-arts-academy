@@ -1,0 +1,71 @@
+body{
+    font-family: "Roboto Condensed";
+    background-color:#121212;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    color:#fff;
+}
+
+p{
+    color:#ffff;
+}
+
+#brand:hover{
+    color:#dc3545;
+}
+.navbar-collapse{
+    padding-bottom: 280px;
+    padding-left: 200px;
+}
+.navbar-nav {
+    background-color: #121212;
+
+}
+
+.navbar{
+    padding-left:0rem;
+}
+
+.navbar-brand:hover{
+    color:#dc3545;
+
+}
+.navbar-brand{
+    padding-top:15px;
+    margin-bottom:300px;
+    margin-left: 200px;
+
+}
+
+
+.nav-item {
+    padding: 0 18px;
+}
+
+#title .container-fluid{
+    padding: 3% 15% 7%;
+}
+.fighter{
+    border: 1px solid white;
+    padding:10px;
+    margin-bottom: 17.5rem;
+
+}
+
+#footer{
+    text-align: center;
+    background-color:#d1d1d1;
+}
+
+.social-icon:hover{
+    color:#dc3545;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+
+.copyright{
+    color: #8f8f8f;
+}

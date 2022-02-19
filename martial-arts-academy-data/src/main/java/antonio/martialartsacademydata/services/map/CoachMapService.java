@@ -4,13 +4,16 @@ import antonio.martialartsacademydata.model.Coach;
 import antonio.martialartsacademydata.repositories.CoachRepository;
 import antonio.martialartsacademydata.services.CoachService;
 import antonio.martialartsacademydata.services.CoachSpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
 import java.util.Set;
 
-@Component
+@Service
+@Profile({"default", "map"})
 public class CoachMapService extends AbstractMapService<Coach,Long> implements CoachService {
 
 

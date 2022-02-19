@@ -2,11 +2,14 @@ package antonio.martialartsacademydata.services.map;
 
 import antonio.martialartsacademydata.model.FighterSpecialty;
 import antonio.martialartsacademydata.services.FighterSpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Component
+@Service
+@Profile({"default", "map"})
 public class FighterSpecialtyMapService extends AbstractMapService<FighterSpecialty,Long> implements FighterSpecialtyService{
 
 
