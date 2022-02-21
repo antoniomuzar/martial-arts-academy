@@ -1,17 +1,18 @@
 package antonio.martialartsacademydata.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 @Table(name="coach_specialty")
 public class CoachSpecialty extends BaseEntity{
+
 
     @Column(name="description")
     private String description;
@@ -20,11 +21,6 @@ public class CoachSpecialty extends BaseEntity{
     @JoinColumn(name="coach_id")
     private Coach coach;
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+
 }

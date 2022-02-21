@@ -1,17 +1,17 @@
 package antonio.martialartsacademydata.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 @Table(name="fighters")
 public class Fighter extends Person{
 
@@ -20,13 +20,6 @@ public class Fighter extends Person{
             inverseJoinColumns = @JoinColumn(name="speciality_id"))
     private Set<FighterSpecialty> specialities = new HashSet<>();
 
-    public Set<FighterSpecialty> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<FighterSpecialty> specialities) {
-        this.specialities = specialities;
-    }
 
 
 }

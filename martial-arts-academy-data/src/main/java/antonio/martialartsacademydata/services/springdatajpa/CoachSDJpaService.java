@@ -2,7 +2,6 @@ package antonio.martialartsacademydata.services.springdatajpa;
 
 import antonio.martialartsacademydata.model.Coach;
 import antonio.martialartsacademydata.repositories.CoachRepository;
-import antonio.martialartsacademydata.repositories.CoachSpecialtyRepository;
 import antonio.martialartsacademydata.services.CoachService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
@@ -12,16 +11,14 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Service
+@Component
 @Profile("springdatajpa")
 public class CoachSDJpaService implements CoachService {
 
     private final CoachRepository coachRepository;
 
-
     public CoachSDJpaService(CoachRepository coachRepository) {
         this.coachRepository = coachRepository;
-
     }
 
     @Override

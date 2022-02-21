@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Service
+@Component
 @Profile("springdatajpa")
 public class FighterSDjpaService implements FighterService {
 

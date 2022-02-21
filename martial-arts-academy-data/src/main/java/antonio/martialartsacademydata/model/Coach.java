@@ -1,5 +1,6 @@
 package antonio.martialartsacademydata.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,12 +9,19 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
+@Entity
 @Table(name="coaches")
 public class Coach extends Person {
+
+    @Builder
+    public Coach(Long id, String firstName, String lastName, String country, Set<CoachSpecialty> specialities) {
+        super(id, firstName, lastName);
+        this.country = country;
+        this.specialities = specialities;
+    }
 
     @Column(name="country")
     private String country;
@@ -21,16 +29,5 @@ public class Coach extends Person {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "coach")
     private Set<CoachSpecialty> specialities = new HashSet<>();
 
-    public Set<CoachSpecialty> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<CoachSpecialty> specialities) {
-        this.specialities = specialities;
-
-
-
-
-    }
 
 }
