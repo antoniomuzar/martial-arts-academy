@@ -9,10 +9,16 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-    color:#ffff;
+    color:#fff;
 }
 
 
+#coaches{
+    background-color:#fff;
+}
+.container-fluid{
+    padding: 7% 15%;
+}
 
 #brand:hover{
     color:#dc3545;
@@ -55,10 +61,18 @@ p{
     margin-bottom: 17.5rem;
 
 }
+.container{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
 
 #footer{
     text-align: center;
     background-color:#d1d1d1;
+    margin-top:15rem;
 }
 
 .social-icon:hover{
@@ -66,13 +80,14 @@ p{
 }
 .social-icon{
     margin: 20px 10px;
+    font-size: 1.5rem;
 }
 
 .copyright{
     color: #8f8f8f;
 }
-
-.table{
-    width:150px;
-    height:150px;
+.footer-color{
+    background-color: #d1d1d1;
 }
+
+

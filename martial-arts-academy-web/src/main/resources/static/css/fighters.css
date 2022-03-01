@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6{
 p{
     color:#ffff;
 }
+#fighters{
+    background-color:#fff;
+}
+.container-fluid{
+    padding: 7% 15%;
+}
 
 #brand:hover{
     color:#dc3545;
@@ -57,6 +63,7 @@ p{
 #footer{
     text-align: center;
     background-color:#d1d1d1;
+    margin-top:15rem;
 }
 
 .social-icon:hover{
@@ -64,8 +71,12 @@ p{
 }
 .social-icon{
     margin: 20px 10px;
+    font-size: 1.5rem;
 }
 
 .copyright{
     color: #8f8f8f;
+}
+.form{
+    padding-left: 50rem;
 }

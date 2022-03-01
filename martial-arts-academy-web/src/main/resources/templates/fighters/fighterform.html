@@ -1,16 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="utf-8">
-    <title>Martial arts academy</title>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Martial Arts Academy</title>
-
+    <meta charset="UTF-8">
+    <title>Fighters</title>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -22,7 +14,7 @@
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{/css/about.css}"/>
+    <link rel="stylesheet" th:href="@{/css/fighters.css}"/>
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -34,7 +26,6 @@
 
 </head>
 <body>
-
 <section class="colored-section" id="title">
 
     <div class="container-fluid ">
@@ -70,29 +61,42 @@
                 </ul>
             </div>
         </nav>
-        <div class="description-row">
-            <img class="about-image" src="/images/about.jpg">
-        <p  class="description" > Martial arts academy is a martial arts dojo founded in 1994 by three of our top trainers: Misha Nurmagomedov, Bruno Gracie and Idris Van Damme.
-            Their goal was establishing a place in which young genereations can develop themselves into professional fighters , but most importantly into
-            good people. Their doctrine wasn't about violence as many would instantly think upon mentioning martial arts but respect, discipline and helping
-            those in need. Their valuable martial arts knowledge is passed on younger generations building a community of strong , helpful and disciplined people.
-            Wheter you have professional or amateur ambitions you can join our team and explore the faboulous world of martial arts.
-        </p>
-        <div id="button">
-        <button type="button" class="btn btn-danger join-button">JOIN US</button>
-        </div>
+    </div>
+</section>
+<!--/*@thymesVar id="fighter" type="antonio.martialartsacademy.model.Fighter"*/-->
+<!--/*@thymesVar id="fighterSpecialty" type="antonio.martialartsacademy.model.FighterSpecialty"*/-->
+<form th:object="${fighters}" th:action="@{/fighters/}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+<div class="form">
+
+
+    <div><h6 th:text="'First Name'">First Name</h6>
+        <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{firstName}"></textarea>
+    </div>
+    <div><h6 th:text="'Last Name'">World ranking</h6>
+        <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{lastName}"></textarea>
     </div>
 
-</section>
+    <div><h6 th:text="'Country'">Country</h6>
+        <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{country}"></textarea>
+    </div>
+    <div><h6 th:text="'Specialty'">Specialty</h6>
+        <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{specialty}"></textarea>
+    </div>
 
-
+    <div><h6 th:text="'Fighting organization'">Fighting organization</h6>
+        <textarea class="form-control" rows="2" style="width: 200px;" th:field="*{fightingOrganization}"></textarea>
+    </div>
+    <div><h6 th:text="'World ranking'">World ranking</h6>
+        <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{worldRanking}"></textarea>
+    </div>
+    <button type="submit" class="btn btn-danger">Submit</button>
+</div>
+</form>
 <!--Footer-->
-
 
 <footer id="footer">
     <div class="container-fluid">
-
-
         <i class="social-icon fab fa-facebook-f"></i>
         <i class="social-icon fab fa-twitter"></i>
         <i class="social-icon fab fa-instagram"></i>
@@ -100,6 +104,5 @@
         <p class="copyright">© Copyright 2022 Antonio Mužar</p>
     </div>
 </footer>
-
 </body>
 </html>

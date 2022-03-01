@@ -13,6 +13,11 @@ p{
     color: #fff;
 }
 
+.row{
+    background-color: #121212;
+    padding-left: 280px;
+}
+
 #brand:hover{
     color:#dc3545;
 }
@@ -22,7 +27,7 @@ p{
 }
 
 #title .container-fluid{
-    padding: 3% 15% 7%;
+    padding: 3% 15%;
 }
 
 .fighter{
@@ -92,4 +97,5 @@ p{
     width: 80%;
     height: 80%;
     transform: rotate(25deg);
+
 }

@@ -20,7 +20,7 @@
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{/css/home.css}"/>
+    <link rel="stylesheet" th:href="@{/css/coaches.css}"/>
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -41,7 +41,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <p class=fighter>FIGHTER</p>
-            <a class="navbar-brand " id="brand"href="index.html">Martial arts academy</a>
+            <a class="navbar-brand " id="brand"href="/index.html">Martial arts academy</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                 <span class="navbar-toggler-icon"></span>
@@ -68,35 +68,47 @@
                 </ul>
             </div>
         </nav>
-        </section>
-            <section id="coaches-table">
+    </div>
+</section>
 
-            <!--/*@thymesVar id="coach" type="antonio.martialartsacademydata.model.Coach"*/-->
+    <section id="coaches-table">
+
+        <div class="coaches">
+
+                <!--/*@thymesVar id="coach" type="antonio.martialartsacademy.model.Coach"*/-->
             <h2 class="coaches" th:text="'Coaches'">Coaches</h2>
-            <table id="coaches" class="table table-striped">
-                <thead>
-                <tr>
-                    <th >Id</th>
-                    <th >First Name</th>
-                    <th >Last Name</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="coach : ${coaches}">
-                    <td th:text="${coach.firstName + ' ' + coach.lastName}"></td>
-                    <td><span th:each="coachSpecialty : ${coach.specialities}"
-                              th:text="${coachSpecialty.description + ' '}" /> <span
-                            th:if="${coach?.specialities?.size() == 0}">none</span></td>
-                </tr>
 
-                </tbody>
-            </table>
+                <table id="coaches" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th style="width: 150px;">Id</th>
+                        <th style="width: 150px;">Name</th>
+                        <th style="width: 150px;">Country</th>
+                        <th style="width: 150px">Specialty</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="coach : ${coaches}">
+                        <td th:text="${coach.id}"/>
+                        <td th:text="${coach.firstName + ' ' + coach.lastName}"/>
+                        <td th:text="${coach.country}"/>
+                        <td><span th:each="coachSpecialty : ${coach.specialties}"
+                                  th:text="${coachSpecialty.description + ' '}" /> <span
+                            th:if="${coach?.specialties?.size() == 0}">none</span></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+        </div>
+
             </section>
 
 
 <!--Footer-->
 
-<footer id="footer">
+<footer id="footer" class="footer-color">
     <div class="container-fluid">
 
 
