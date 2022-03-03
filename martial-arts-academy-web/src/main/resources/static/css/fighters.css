@@ -11,9 +11,13 @@ h1, h2, h3, h4, h5, h6{
 p{
     color:#ffff;
 }
-#fighters{
-    background-color:#fff;
+.table-title{
+    color:#ffff;
 }
+.table-data{
+ color:  rgba(238, 238, 238, 0.76) ;
+}
+
 .container-fluid{
     padding: 7% 15%;
 }
@@ -42,6 +46,8 @@ p{
     padding-top:15px;
     margin-bottom:300px;
     margin-left: 200px;
+    letter-spacing: 1px;
+
 
 }
 
@@ -51,13 +57,27 @@ p{
 }
 
 #title .container-fluid{
-    padding: 3% 15% 7%;
+    padding: 3% 15% 0%;
 }
 .fighter{
     border: 1px solid white;
     padding:10px;
     margin-bottom: 17.5rem;
+}
+.fighters-title{
+    color:#dc3545;
+    margin-left: 870px;
+    padding-bottom: 10px;
+}
+#fighters{
+    background-color: rgba(238, 238, 238, 0.76);
+    max-width: 700px;
+    margin-left: 600px;
+    background-color: #121212;
 
+}
+#fighters td,th{
+    border-top:0;
 }
 
 #footer{

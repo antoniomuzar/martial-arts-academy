@@ -9,12 +9,26 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-    color:#fff;
+    color:#ffff;
 }
-
-
+.table-title{
+    color:#ffff;
+}
+.table-data{
+  color: rgba(238, 238, 238, 0.76);
+}
 #coaches{
-    background-color:#fff;
+    background-color: #121212;
+    max-width: 600px;
+    margin-left: 650px;
+}
+#coaches td,th{
+    border-top:0;
+}
+.coaches-title{
+    margin-left:870px;
+    padding-bottom:10px;
+    color:#dc3545;
 }
 .container-fluid{
     padding: 7% 15%;
@@ -44,6 +58,7 @@ p{
     padding-top:15px;
     margin-bottom:300px;
     margin-left: 200px;
+    letter-spacing: 1px;
 
 }
 
@@ -53,7 +68,7 @@ p{
 }
 
 #title .container-fluid{
-    padding: 3% 15% 7%;
+    padding: 3% 15% 0%;
 }
 .fighter{
     border: 1px solid white;

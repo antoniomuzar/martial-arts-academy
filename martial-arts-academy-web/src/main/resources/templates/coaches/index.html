@@ -41,7 +41,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <p class=fighter>FIGHTER</p>
-            <a class="navbar-brand " id="brand"href="/index.html">Martial arts academy</a>
+            <a class="navbar-brand " id="brand"href="/index.html">FIGHT</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
                 <span class="navbar-toggler-icon"></span>
@@ -76,24 +76,22 @@
         <div class="coaches">
 
                 <!--/*@thymesVar id="coach" type="antonio.martialartsacademy.model.Coach"*/-->
-            <h2 class="coaches" th:text="'Coaches'">Coaches</h2>
+            <h2 class="coaches-title" th:text="'Coaches'">Coaches</h2>
 
-                <table id="coaches" class="table table-striped">
+                <table id="coaches" class="table table-striped ">
                     <thead>
                     <tr>
-                        <th style="width: 150px;">Id</th>
-                        <th style="width: 150px;">Name</th>
-                        <th style="width: 150px;">Country</th>
-                        <th style="width: 150px">Specialty</th>
+                        <th class= "table-title" style="width: 150px;">Name</th>
+                        <th class= "table-title" style="width: 150px;">Country</th>
+                        <th class= "table-title" style="width: 150px">Specialty</th>
 
                     </tr>
                     </thead>
                     <tbody>
                     <tr th:each="coach : ${coaches}">
-                        <td th:text="${coach.id}"/>
-                        <td th:text="${coach.firstName + ' ' + coach.lastName}"/>
-                        <td th:text="${coach.country}"/>
-                        <td><span th:each="coachSpecialty : ${coach.specialties}"
+                        <td class="table-data" th:text="${coach.firstName + ' ' + coach.lastName}"/>
+                        <td class="table-data" th:text="${coach.country}"/>
+                        <td><span class="table-data" th:each="coachSpecialty : ${coach.specialties}"
                                   th:text="${coachSpecialty.description + ' '}" /> <span
                             th:if="${coach?.specialties?.size() == 0}">none</span></td>
 

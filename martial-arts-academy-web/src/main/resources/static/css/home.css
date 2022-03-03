@@ -17,7 +17,31 @@ p{
     background-color: #121212;
     padding-left: 280px;
 }
+.table-title{
+    color:#ffffff;
+}
+.table-data{
+    color: rgba(238, 238, 238, 0.76);
+}
+#fighters .table{
+    background-color: #121212;
+}
+#fighters{
+    background-color:#121212;
+    max-width: 800px;
+    margin-left:600px;
+    margin-bottom:0;
 
+}
+.fighter-name{
+    color:#dc3545;
+    margin-left: 900px;
+}
+.fighter-table{
+    background-color: #121212;
+    margin-bottom: 0;
+    padding-bottom:20px;
+}
 #brand:hover{
     color:#dc3545;
 }
@@ -67,6 +91,7 @@ p{
     padding-top:15px;
     margin-bottom:300px;
     margin-left: 200px;
+    letter-spacing: 1px;
 
 }
 .nav-item{

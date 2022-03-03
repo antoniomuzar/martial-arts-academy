@@ -3,15 +3,11 @@ package antonio.martialartsacademy.controllers;
 import antonio.martialartsacademy.model.Fighter;
 import antonio.martialartsacademy.services.FighterService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-import org.webjars.NotFoundException;
 
 
 @Slf4j
