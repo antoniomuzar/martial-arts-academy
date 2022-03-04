@@ -1,9 +1,5 @@
 package antonio.martialartsacademy.services.map;
-
-import antonio.martialartsacademy.model.Coach;
-import antonio.martialartsacademy.model.CoachSpecialty;
 import antonio.martialartsacademy.model.Fighter;
-import antonio.martialartsacademy.model.FighterSpecialty;
 import antonio.martialartsacademy.services.FighterService;
 import antonio.martialartsacademy.services.FighterSpecialtyService;
 import org.springframework.context.annotation.Profile;
