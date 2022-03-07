@@ -2,18 +2,33 @@ body{
     font-family: "Roboto Condensed";
     background-color:#121212;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h3, h4, h5, h6{
     font-family: "Roboto Condensed";
     font-weight: 700;
-    color:#fff;
+    color:#ffff;
 }
 
 p{
     color:#ffff;
 }
+.succes{
+    color:#121212;
+    text-align: center;
+}
+
+.success-title , .application{
+    color: #218f22;
+}
+
+.application{
+    padding-bottom: 20px;
+}
+
+
 .contact{
     color:#dc3545;
     text-align: center;
+    padding-bottom: 20px;
 }
 .headline{
     text-align: center;
@@ -83,51 +98,6 @@ p{
     color: #8f8f8f;
 }
 
-<!-- Contact form -->
-
-body { background:rgb(30,30,40); }
-form { max-width:420px; margin:50px auto; }
-
-.feedback-input {
-    color:white;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight:500;
-    font-size: 18px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border:2px solid #dc3545;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width:100%;
-    box-sizing: border-box;
-    outline:0;
+.contact-form{
+    margin-left: 850px;
 }
-
-.feedback-input:focus { border:2px solid #CC4949; }
-
-textarea {
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-[type="submit"] {
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 100%;
-    background:#da2c43;
-    border-radius:5px;
-    border:0;
-    cursor:pointer;
-    color:white;
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
-    transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
-}
-[type="submit"]:hover { background:#dc3545; }
-
-
