@@ -65,19 +65,40 @@
                         <a class="nav-link " href="/fighters/index.html">Fighters</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact/index.html">Contact us</a>
+                        <a class="nav-link" href="/contact/new">Contact us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+    <!--/*@thymesVar id="contact" type="antonio.martialartsacademy.model.Contact"*/-->
 
         <h1 class="contact">Get in touch!</h1>
-        <form>
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-            <input type="submit" value="SUBMIT"/>
+        <form th:object="${contact}" th:action="@{/contact/}" method="post">
+            <input type="hidden" th:field="*{id}"/>
+            <div class="contact-form">
+
+
+                <div><h6 th:text="'First Name'">First Name</h6>
+                    <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{firstName}"></textarea>
+                </div>
+                <br>
+                <div><h6 th:text="'Last Name'">Last Name</h6>
+                    <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{lastName}"></textarea>
+                </div>
+                <br>
+                <div><h6 th:text="'E-mail'">E-mail</h6>
+                    <textarea class="form-control" rows="1" style="width: 200px;" th:field="*{email}"></textarea>
+                </div>
+                <br>
+                <div><h6 th:text="'Message'">Message</h6>
+                    <textarea class="form-control" rows="4" style="width: 200px;" th:field="*{message}"></textarea>
+                </div>
+                <br>
+
+                <button type="submit" class="btn btn-danger">Submit</button>
+            </div>
+
         </form>
 
         </section>
