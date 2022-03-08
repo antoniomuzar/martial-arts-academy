@@ -17,30 +17,20 @@ p{
     background-color: #121212;
     padding-left: 280px;
 }
-.table-title{
-    color:#ffffff;
-}
-.table-data{
-    color: rgba(238, 238, 238, 0.76);
-}
-#fighters .table{
+.succes{
     background-color: #121212;
+    padding-left:850px;
+    padding-bottom:25px;
 }
-#fighters{
-    background-color:#121212;
-    max-width: 800px;
-    margin-left:600px;
-    margin-bottom:0;
 
-}
-.fighter-name{
-    color:#dc3545;
-    margin-left: 900px;
-}
-.fighter-table{
-    background-color: #121212;
-    margin-bottom: 0;
+.success-title, .application{
+    color: #218f22;
     padding-bottom:20px;
+}
+.btn{
+    font-size:1.5rem;
+    padding:0px 20px;
+
 }
 #brand:hover{
     color:#dc3545;
@@ -51,7 +41,7 @@ p{
 }
 
 #title .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 0%;
 }
 
 .fighter{
@@ -64,6 +54,11 @@ p{
     border: 1px solid white;
     padding:10px;
     margin-bottom:100px;
+}
+.amateur-form{
+    background-color:#121212;
+    padding-bottom:50px;
+    padding-left: 850px;
 }
 
 .container-fluid{
@@ -91,7 +86,6 @@ p{
     padding-top:15px;
     margin-bottom:300px;
     margin-left: 200px;
-    letter-spacing: 1px;
 
 }
 .nav-item{
