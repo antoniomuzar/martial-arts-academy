@@ -44,11 +44,31 @@ p{
     padding: 3% 15% 0%;
 }
 
+.table-title{
+    color:#ffff;
+}
+.fighter-name{
+    color:#dc3545;
+    padding-bottom:20px;
+}
 .fighter{
     border: 1px solid white;
     padding:10px;
     margin-bottom: 17.5rem;
+}
+#fighters-table{
+    background-color: #121212;
+}
+#fighters{
+    margin-bottom:0px;
 
+}
+
+.fighter-table{
+    background-color: #121212;
+    max-width: 700px;
+    text-align: center;
+    margin-left:600px;
 }
 .bruce-lee{
     border: 1px solid white;
@@ -71,7 +91,6 @@ p{
 }
 .navbar-nav {
     background-color: #121212;
-
 }
 
  .navbar{
@@ -87,11 +106,9 @@ p{
     margin-bottom:300px;
     margin-left: 200px;
     letter-spacing: 1px;
-
 }
 .nav-item{
     padding:0 18px;
-
 }
 .big-heading{
     padding-bottom:2.5rem;
@@ -107,7 +124,9 @@ p{
 .social-icon{
     margin: 25px 15px;
     font-size: 1.5rem;
-
+}
+.table-data{
+color: rgba(238, 238, 238, 0.76);
 }
 
 .copyright{
@@ -117,5 +136,4 @@ p{
     width: 80%;
     height: 80%;
     transform: rotate(25deg);
-
 }
